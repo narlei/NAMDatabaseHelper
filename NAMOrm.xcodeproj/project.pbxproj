@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050DC8D052EC1B333BC1322B /* Pods_NAMOrmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155AEDA2E0531DDA5DFDC94A /* Pods_NAMOrmTests.framework */; };
+		A031C72B71D65174DDD666E1 /* Pods_NAMOrm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341D15B29AB55CD9CB0EA08D /* Pods_NAMOrm.framework */; };
+		D5F72DAC1F9604CB00CB5F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F72DAB1F9604CB00CB5F18 /* AppDelegate.swift */; };
+		D5F72DAE1F9604CB00CB5F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F72DAD1F9604CB00CB5F18 /* ViewController.swift */; };
+		D5F72DB11F9604CB00CB5F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F72DAF1F9604CB00CB5F18 /* Main.storyboard */; };
+		D5F72DB31F9604CB00CB5F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5F72DB21F9604CB00CB5F18 /* Assets.xcassets */; };
+		D5F72DB61F9604CB00CB5F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F72DB41F9604CB00CB5F18 /* LaunchScreen.storyboard */; };
+		D5F72DC11F9604CC00CB5F18 /* NAMOrmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F72DC01F9604CC00CB5F18 /* NAMOrmTests.swift */; };
+		D5F72DCD1F9605B600CB5F18 /* NAMDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F72DCC1F9605B600CB5F18 /* NAMDatabase.swift */; };
+		D5F72DCF1F9605D100CB5F18 /* NAMTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F72DCE1F9605D100CB5F18 /* NAMTable.swift */; };
+		D5F72DD11F960DC600CB5F18 /* database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D5F72DD01F960CEA00CB5F18 /* database.sqlite */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5F72DBD1F9604CC00CB5F18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5F72DA01F9604CB00CB5F18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5F72DA71F9604CB00CB5F18;
+			remoteInfo = NAMOrm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		155AEDA2E0531DDA5DFDC94A /* Pods_NAMOrmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NAMOrmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		341D15B29AB55CD9CB0EA08D /* Pods_NAMOrm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NAMOrm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5673231B6F20C74098560E2D /* Pods-NAMOrm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAMOrm.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAMOrm/Pods-NAMOrm.release.xcconfig"; sourceTree = "<group>"; };
+		72A3195C7309CFD9E967B742 /* Pods-NAMOrmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAMOrmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAMOrmTests/Pods-NAMOrmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A134AEBF81D1D93B5B13A3EB /* Pods-NAMOrm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAMOrm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAMOrm/Pods-NAMOrm.debug.xcconfig"; sourceTree = "<group>"; };
+		D096B1A7E9B4F8C826D36E19 /* Pods-NAMOrmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAMOrmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAMOrmTests/Pods-NAMOrmTests.release.xcconfig"; sourceTree = "<group>"; };
+		D5F72DA81F9604CB00CB5F18 /* NAMOrm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NAMOrm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F72DAB1F9604CB00CB5F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5F72DAD1F9604CB00CB5F18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5F72DB01F9604CB00CB5F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5F72DB21F9604CB00CB5F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5F72DB51F9604CB00CB5F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5F72DB71F9604CB00CB5F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F72DBC1F9604CC00CB5F18 /* NAMOrmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NAMOrmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F72DC01F9604CC00CB5F18 /* NAMOrmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAMOrmTests.swift; sourceTree = "<group>"; };
+		D5F72DC21F9604CC00CB5F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F72DCC1F9605B600CB5F18 /* NAMDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAMDatabase.swift; sourceTree = "<group>"; };
+		D5F72DCE1F9605D100CB5F18 /* NAMTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAMTable.swift; sourceTree = "<group>"; };
+		D5F72DD01F960CEA00CB5F18 /* database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sqlite; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5F72DA51F9604CB00CB5F18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A031C72B71D65174DDD666E1 /* Pods_NAMOrm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F72DB91F9604CC00CB5F18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050DC8D052EC1B333BC1322B /* Pods_NAMOrmTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00CB4C0403463A2C6447574F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A134AEBF81D1D93B5B13A3EB /* Pods-NAMOrm.debug.xcconfig */,
+				5673231B6F20C74098560E2D /* Pods-NAMOrm.release.xcconfig */,
+				72A3195C7309CFD9E967B742 /* Pods-NAMOrmTests.debug.xcconfig */,
+				D096B1A7E9B4F8C826D36E19 /* Pods-NAMOrmTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40B28779EE47E9CB783442DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				341D15B29AB55CD9CB0EA08D /* Pods_NAMOrm.framework */,
+				155AEDA2E0531DDA5DFDC94A /* Pods_NAMOrmTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5F72D9F1F9604CB00CB5F18 = {
+			isa = PBXGroup;
+			children = (
+				D5F72DAA1F9604CB00CB5F18 /* NAMOrm */,
+				D5F72DBF1F9604CC00CB5F18 /* NAMOrmTests */,
+				D5F72DA91F9604CB00CB5F18 /* Products */,
+				00CB4C0403463A2C6447574F /* Pods */,
+				40B28779EE47E9CB783442DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5F72DA91F9604CB00CB5F18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5F72DA81F9604CB00CB5F18 /* NAMOrm.app */,
+				D5F72DBC1F9604CC00CB5F18 /* NAMOrmTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5F72DAA1F9604CB00CB5F18 /* NAMOrm */ = {
+			isa = PBXGroup;
+			children = (
+				D5F72DD01F960CEA00CB5F18 /* database.sqlite */,
+				D5F72DCB1F9605A100CB5F18 /* Classes */,
+				D5F72DAB1F9604CB00CB5F18 /* AppDelegate.swift */,
+				D5F72DAD1F9604CB00CB5F18 /* ViewController.swift */,
+				D5F72DAF1F9604CB00CB5F18 /* Main.storyboard */,
+				D5F72DB21F9604CB00CB5F18 /* Assets.xcassets */,
+				D5F72DB41F9604CB00CB5F18 /* LaunchScreen.storyboard */,
+				D5F72DB71F9604CB00CB5F18 /* Info.plist */,
+			);
+			path = NAMOrm;
+			sourceTree = "<group>";
+		};
+		D5F72DBF1F9604CC00CB5F18 /* NAMOrmTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5F72DC01F9604CC00CB5F18 /* NAMOrmTests.swift */,
+				D5F72DC21F9604CC00CB5F18 /* Info.plist */,
+			);
+			path = NAMOrmTests;
+			sourceTree = "<group>";
+		};
+		D5F72DCB1F9605A100CB5F18 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D5F72DCC1F9605B600CB5F18 /* NAMDatabase.swift */,
+				D5F72DCE1F9605D100CB5F18 /* NAMTable.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5F72DA71F9604CB00CB5F18 /* NAMOrm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F72DC51F9604CC00CB5F18 /* Build configuration list for PBXNativeTarget "NAMOrm" */;
+			buildPhases = (
+				C9CA0BAFE25D3278B9933F39 /* [CP] Check Pods Manifest.lock */,
+				D5F72DA41F9604CB00CB5F18 /* Sources */,
+				D5F72DA51F9604CB00CB5F18 /* Frameworks */,
+				D5F72DA61F9604CB00CB5F18 /* Resources */,
+				5AD9F8A105022218A69068D9 /* [CP] Embed Pods Frameworks */,
+				13D1929E9C68AE40F12951E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NAMOrm;
+			productName = NAMOrm;
+			productReference = D5F72DA81F9604CB00CB5F18 /* NAMOrm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5F72DBB1F9604CC00CB5F18 /* NAMOrmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F72DC81F9604CC00CB5F18 /* Build configuration list for PBXNativeTarget "NAMOrmTests" */;
+			buildPhases = (
+				4CBBED5EDE53DD871DFD08F2 /* [CP] Check Pods Manifest.lock */,
+				D5F72DB81F9604CC00CB5F18 /* Sources */,
+				D5F72DB91F9604CC00CB5F18 /* Frameworks */,
+				D5F72DBA1F9604CC00CB5F18 /* Resources */,
+				8C4A124DA6829E65F027D223 /* [CP] Embed Pods Frameworks */,
+				3A09D630EA16226506F851AB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5F72DBE1F9604CC00CB5F18 /* PBXTargetDependency */,
+			);
+			name = NAMOrmTests;
+			productName = NAMOrmTests;
+			productReference = D5F72DBC1F9604CC00CB5F18 /* NAMOrmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5F72DA01F9604CB00CB5F18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Narlei A Moreira";
+				TargetAttributes = {
+					D5F72DA71F9604CB00CB5F18 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					D5F72DBB1F9604CC00CB5F18 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D5F72DA71F9604CB00CB5F18;
+					};
+				};
+			};
+			buildConfigurationList = D5F72DA31F9604CB00CB5F18 /* Build configuration list for PBXProject "NAMOrm" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5F72D9F1F9604CB00CB5F18;
+			productRefGroup = D5F72DA91F9604CB00CB5F18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5F72DA71F9604CB00CB5F18 /* NAMOrm */,
+				D5F72DBB1F9604CC00CB5F18 /* NAMOrmTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5F72DA61F9604CB00CB5F18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F72DD11F960DC600CB5F18 /* database.sqlite in Resources */,
+				D5F72DB61F9604CB00CB5F18 /* LaunchScreen.storyboard in Resources */,
+				D5F72DB31F9604CB00CB5F18 /* Assets.xcassets in Resources */,
+				D5F72DB11F9604CB00CB5F18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F72DBA1F9604CC00CB5F18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13D1929E9C68AE40F12951E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NAMOrm/Pods-NAMOrm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A09D630EA16226506F851AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NAMOrmTests/Pods-NAMOrmTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CBBED5EDE53DD871DFD08F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NAMOrmTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AD9F8A105022218A69068D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NAMOrm/Pods-NAMOrm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NAMOrm/Pods-NAMOrm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C4A124DA6829E65F027D223 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NAMOrmTests/Pods-NAMOrmTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9CA0BAFE25D3278B9933F39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NAMOrm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5F72DA41F9604CB00CB5F18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F72DAE1F9604CB00CB5F18 /* ViewController.swift in Sources */,
+				D5F72DCF1F9605D100CB5F18 /* NAMTable.swift in Sources */,
+				D5F72DAC1F9604CB00CB5F18 /* AppDelegate.swift in Sources */,
+				D5F72DCD1F9605B600CB5F18 /* NAMDatabase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F72DB81F9604CC00CB5F18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F72DC11F9604CC00CB5F18 /* NAMOrmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5F72DBE1F9604CC00CB5F18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5F72DA71F9604CB00CB5F18 /* NAMOrm */;
+			targetProxy = D5F72DBD1F9604CC00CB5F18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5F72DAF1F9604CB00CB5F18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5F72DB01F9604CB00CB5F18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5F72DB41F9604CB00CB5F18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5F72DB51F9604CB00CB5F18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5F72DC31F9604CC00CB5F18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5F72DC41F9604CC00CB5F18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5F72DC61F9604CC00CB5F18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A134AEBF81D1D93B5B13A3EB /* Pods-NAMOrm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQKT5G7NHC;
+				INFOPLIST_FILE = NAMOrm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.narleimoreira.NAMOrm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5F72DC71F9604CC00CB5F18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5673231B6F20C74098560E2D /* Pods-NAMOrm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQKT5G7NHC;
+				INFOPLIST_FILE = NAMOrm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.narleimoreira.NAMOrm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5F72DC91F9604CC00CB5F18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A3195C7309CFD9E967B742 /* Pods-NAMOrmTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQKT5G7NHC;
+				INFOPLIST_FILE = NAMOrmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.narleimoreira.NAMOrmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NAMOrm.app/NAMOrm";
+			};
+			name = Debug;
+		};
+		D5F72DCA1F9604CC00CB5F18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D096B1A7E9B4F8C826D36E19 /* Pods-NAMOrmTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQKT5G7NHC;
+				INFOPLIST_FILE = NAMOrmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.narleimoreira.NAMOrmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NAMOrm.app/NAMOrm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5F72DA31F9604CB00CB5F18 /* Build configuration list for PBXProject "NAMOrm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F72DC31F9604CC00CB5F18 /* Debug */,
+				D5F72DC41F9604CC00CB5F18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F72DC51F9604CC00CB5F18 /* Build configuration list for PBXNativeTarget "NAMOrm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F72DC61F9604CC00CB5F18 /* Debug */,
+				D5F72DC71F9604CC00CB5F18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F72DC81F9604CC00CB5F18 /* Build configuration list for PBXNativeTarget "NAMOrmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F72DC91F9604CC00CB5F18 /* Debug */,
+				D5F72DCA1F9604CC00CB5F18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5F72DA01F9604CB00CB5F18 /* Project object */;
+}
